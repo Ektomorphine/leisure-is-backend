@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+5.times do |i|
+  User.create(
+    email: "user#{i}@example.com",
+    nickname: "UOne",
+    name: "User One",
+    password: "monkey67",
+    image: "https://success.salesforce.com/resource/1524698674000/tdxlib/img/default-user.png")
+end
