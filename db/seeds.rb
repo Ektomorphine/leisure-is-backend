@@ -14,3 +14,6 @@
     password: "monkey67",
     image: "https://success.salesforce.com/resource/1524698674000/tdxlib/img/default-user.png")
 end
+
+FactoryBot.create_list(:event, 40)
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
